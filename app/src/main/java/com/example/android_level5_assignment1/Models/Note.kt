@@ -11,11 +11,11 @@ import java.util.*
 @Entity(tableName = "noteTable")
 data class Note(
     @ColumnInfo(name = "title")
-    val title : String,
+    var title : String,
     @ColumnInfo(name = "lastUpdated")
-    val lastUpdated: Date,
+    var lastUpdated: Date,
     @ColumnInfo(name = "text")
-    val text : String,
+    var text : String,
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id")
     val id : Long? = null
